@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="/static/main.css">
+</head>
+<body>
+	<header>
+		<h1>SMART GRID <span>CONTROL SYSTEM</span></h1>
+	</header>
+	<main>
+		<form class="box" method="POST">
+			<div class="box__input">
+				<h2>CHOOSE <span>DATE</span></h2>
+				<input type="date" name="date">
+			</div>
+			<div class="box__input">
+				<h2>CHOOSE <span>LOCATION</span></h2>
+				<input type="text" name="text">
+			</div>
+			<button type="submit">PREDICT</button>	
+			<input type="submit">
+		</form>
+	</main>
+	<nav>
+		<div class="nav__buttons">
+			<div class="nav__icon">
+				<a href="{{ url_for('index') }}"><img src="/static/img/home.svg" class="super" alt=""></a>
+			</div>	
+			<div class="nav__icon">
+				<a href="{{ url_for('representation') }}"><img src="/static/img/graphic-style.svg" alt=""></a>
+			</div>	
+			<div class="nav__icon">
+				<a href="{{ url_for('output') }}">
+					<img src="/static/img/check-circle.svg" alt="">
+				</a>
+			</div>	
+		</div>
+	</nav>		
+</body>
+</html>

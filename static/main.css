@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #2d3436;
+	font-family: "Inter";
+}
+
+header {
+	padding: 1rem;
+	display: flex;
+	justify-content: center;
+}
+
+header h1 {
+	color: white;
+	font-weight: 800;
+}
+
+header h1 span {
+	color: #ffffff44;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60vh;
+}
+
+.box {
+	background: #6c5ce7;
+	padding: 1rem;
+	border-radius: 0.3rem;
+}
+
+.box--nobg {
+	background: transparent;
+}
+
+.box__out {
+	border-bottom: 5px solid #6c5ce7;
+	padding: 0.2rem 0;
+}
+
+.box__out > * {
+	color: white;
+}
+
+.box__out h1 {
+	font-size: 8rem;
+}
+
+.box__out p {
+	font-weight: 200;
+}
+
+.box__image {
+	width: 50vw;
+}
+
+.box__image img {
+	width: 100%;
+}
+
+.box__input:not(:first-child) {
+	padding-top: 2rem;
+}
+
+.box__input {
+	display: flex;
+	flex-direction: column;
+}
+
+.box__input h2 {
+	font-weight: 200;
+	font-size: 1rem;
+	color: white;
+}
+
+.box__input h2 span {
+	font-weight: 700;
+}
+
+.box__input input {
+	margin-top: 0.5rem;
+	background: #574ABB;
+	border: 0;
+	border-radius: 0.2rem;
+	padding: 0.5rem;
+	color: white;
+	font-family: "Inter";
+}
+
+.box button {
+	width: 100%;
+	padding: 0.5rem;
+	background: #2d3436;
+	border: 0;
+	color: white;
+	font-weight: 600;
+	margin-top: 2rem;
+	border-radius: 0.2rem;
+}
+
+nav {
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	width: 100%;
+	bottom: 1rem;
+}
+
+.nav__buttons {
+	background: #6c5ce7;
+	justify-content: space-between;
+	padding: 1rem;
+	display: flex;
+	width: 7em;
+	border-radius: 0.2rem;
+	box-shadow: 0 1.5px 5px #00000044;
+}
+
+.nav__icon img {
+	width: 16px;
+	filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(103deg) brightness(60%) contrast(102%);
+}
+
+.nav__icon img.super {
+	filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(103deg) brightness(106%) contrast(102%);
+}
